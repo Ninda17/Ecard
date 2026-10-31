@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b09" />
+  <title>Reception E-Card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="experience">
+
+    <!-- Background video wrapper -->
+    <div class="video-wrapper">
+      <video
+        class="background-video"
+        id="backgroundVideo"
+        muted
+        playsinline
+        preload="auto"
+        aria-label="Background cinematic video"
+      >
+        <!-- Different video source for Reception -->
+        <source src="assets/reception.mp4" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+    <div class="video-shade" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="topbar">
+      <a class="brand" href="#" id="brandLink">U|T reception</a>
+    </header>
+
+    <!-- Overlay -->
+    <div
+      class="pause-overlay visible"
+      id="pauseOverlay"
+      role="button"
+      tabindex="0"
+      aria-label="Resume video playback"
+    >
+      <div class="pause-message">
+        <span>Click or tap anywhere to OPEN</span>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
